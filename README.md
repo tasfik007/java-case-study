@@ -1,4 +1,4 @@
-# How to run (withc example thread=2, quotes=3)
+# How to run (with example thread=2, quotes=3)
 Step 1 (compile) : javac -d out src/main/java/com/solvians/showcase/*.java
 Step 2 (run)     : java -cp out com.solvians.showcase.App 2 3
 
