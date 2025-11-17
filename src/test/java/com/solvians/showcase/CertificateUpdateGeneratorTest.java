@@ -11,10 +11,11 @@ class CertificateUpdateGeneratorTest {
 
     @Test
     public void generateQuotes() {
-        CertificateUpdateGenerator certificateUpdateGenerator = new CertificateUpdateGenerator(10, 100);
+        int quoteCount = 100;
+        CertificateUpdateGenerator certificateUpdateGenerator = new CertificateUpdateGenerator(10, quoteCount);
         Stream<CertificateUpdate> quotes = certificateUpdateGenerator.generateQuotes();
         assertNotNull(quotes);
-        assertEquals(10 * 100, quotes.count());
+        assertEquals(quoteCount, quotes.count());
 
     }
 }
